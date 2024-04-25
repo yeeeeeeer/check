@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  0~11의 합을 구하시오
+      console.log("내가 푼거");
+
+      var init = 0;
+      var sum = 0;
+      while (++init <= 11) {
+        sum = sum + init;
+      }
+      console.log(sum);
+
+      console.log("선생님 풀이");
+
+      var init = 0;
+      var sum = 0;
+      while (init <= 11) {
+        sum = sum + init;
+        ++init;
+      }
+      console.log(sum);
+
+      console.log("-----------------");
+      // do. 한번만 무조건 실행, 조건이 맞으면 실행
+      // 0~11출력
+      console.log("내 풀이");
+      var init = 0;
+      do {
+        console.log(init);
+      } while (init++ < 11);
+
+      console.log("선생님 풀이");
+      init = 0;
+      sum = 0;
+      do {
+        sum = sum + init;
+        console.log(init);
+      } while (++init <= 11);
+    </script>
+  </body>
+</html>

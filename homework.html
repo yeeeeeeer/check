@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //일일문제. 1 ~ 10 짝수의 합, 홀수의 합, 총합을 출력하시오
+      // for while do-whild
+      console.log("** for문");
+      var two = 0;
+      var one = 0;
+      for (var i = 0; i <= 10; ++i) {
+        if (i % 2 == 0) {
+          two = two + i;
+        } else {
+          one = one + i;
+        }
+      }
+      console.log("짝수 합 " + two);
+      console.log("홀수 합 " + one);
+      console.log("총합 " + (one + two));
+
+      console.log("** while문");
+      var i = 0;
+      var one = 0;
+      var two = 0;
+      while (i <= 10) {
+        if (i % 2 == 0) {
+          two = two + i;
+          ++i;
+        } else {
+          one = one + i;
+          ++i;
+        }
+      }
+      console.log("짝수 합 " + two);
+      console.log("홀수 합 " + one);
+      console.log("총합 " + (one + two));
+
+      console.log("** do-while문");
+      var i = 1;
+      var one = 0;
+      var two = 0;
+      do {
+        if (i % 2 == 0) {
+          two = two + i;
+          ++i;
+        } else {
+          one = one + i;
+          ++i;
+        }
+      } while (i <= 10);
+      console.log("짝수 합 " + two);
+      console.log("홀수 합 " + one);
+      console.log("총합 " + (one + two));
+    </script>
+  </body>
+</html>

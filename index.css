@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  //문자정렬: 가운데정렬
+  font-family: "Noto Sans KR";
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid;
+}
+
+button {
+  background-color: skyblue;
+  border: none;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: aquamarine;
+}
+
+#할일들 > p {
+  cursor: pointer;
+  color: blue;
+}
+
+.done {
+  text-decoration: line-through;
+  color: grey;
+}
